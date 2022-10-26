@@ -2,7 +2,7 @@
 
 LabelText::LabelText()
 {
-    //setStyleSheet("background-color:yellow;");
+
 }
 
 void LabelText::mousePressEvent(QMouseEvent *ev)

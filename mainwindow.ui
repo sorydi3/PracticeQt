@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>586</width>
-    <height>485</height>
+    <width>1303</width>
+    <height>666</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>420</y>
-      <width>211</width>
+      <x>420</x>
+      <y>430</y>
+      <width>291</width>
       <height>51</height>
      </rect>
     </property>
@@ -38,6 +38,13 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="borrarSeleccion">
+       <property name="text">
+        <string>BorrarSeleccionados</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -45,7 +52,7 @@
      <rect>
       <x>20</x>
       <y>10</y>
-      <width>690</width>
+      <width>694</width>
       <height>402</height>
      </rect>
     </property>
@@ -91,8 +98,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>586</width>
-     <height>17</height>
+     <width>1303</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>

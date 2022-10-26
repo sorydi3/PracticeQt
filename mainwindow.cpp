@@ -4,6 +4,8 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
+
+    //TODO IMPLEMENT
     ui->setupUi(this);
     ui->widget->setStyleSheet("background-color:white;");
 
@@ -12,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(writeText()));
     connect(ui->clear, SIGNAL(clicked()), this, SLOT(clear()));
     connect(ui->guardar, SIGNAL(clicked()), this, SLOT(guardar()));
+    //connect(ui->bo, SIGNAL(clicked()), this, SLOT(guardar()));
 
     ui->widget->setLayout(new QVBoxLayout());
 }
@@ -65,6 +68,7 @@ void MainWindow::guardar()
 
 void MainWindow::undoText(int posText)
 {
+    selectedLabels.insert(posText);
     QLabel * label = labels.at(posText-1);
     if(label) delete label;
     QLayoutItem *child = ui->widget->layout()->takeAt(posText);

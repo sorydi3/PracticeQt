@@ -21,9 +21,10 @@ public:
 
     void updatePosition(int newPos);
 
+
+
 signals:
     void signalLabelClicked(int pos);
-
 };
 
 #endif // LABELTEXT_H

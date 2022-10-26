@@ -35,5 +35,6 @@ private:
     void deleteAllQlabels();
     Ui::MainWindow *ui;
     QVector<LabelText *> labels;
+    QSet<int> selectedLabels;
 };
 #endif // MAINWINDOW_H
